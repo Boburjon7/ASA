@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,"Segoe UI","Helvetica Neue","Noto Sans","Liberation Sans",Arial,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.container{
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+nav{
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+.logoMain{
+    display: flex;
+    align-items: center;
+    color: #7000f9;
+    font-size: 40px;
+    font-weight: 900;
+    width: 200px;
+    margin-left: 20px;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content a{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.content a:hover{
+    background-color: blueviolet;
+    transition: 0.5s;
+}
+
+.launch-time{
+    display: flex;
+    margin-bottom: 30px;
+    width: 300px;
+    margin-left: -10px;
+}
+
+.launch-time .double{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    height: 70px;
+    margin: 0 10px;
+}
+
+.launch-time div{
+    flex-basis: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.launch-time div p{
+    font-size: 60px;
+}
+
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 3s linear infinite;
+}
+
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0.1;
+    }
+    10%{
+        bottom: 0;
+        opacity: 0.8;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 0;
+    }
+}
